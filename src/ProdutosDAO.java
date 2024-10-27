@@ -56,7 +56,7 @@ public class ProdutosDAO {
         String sql = "UPDATE produtos SET status=? WHERE id=?";
         try {
             prep = this.conn.prepareStatement(sql);
-            prep.setString(1, "VendidO");
+            prep.setString(1, "Vendido");
             prep.setInt(2, id);
             int linhaAfetada = prep.executeUpdate();
             if(linhaAfetada>0) {
