@@ -20,6 +20,7 @@ public class ProdutosDAO {
             prep.setInt(2, produto.getValor());
             prep.setString(3, "A venda");
             prep.execute();
+            JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso.");
         }
         catch(SQLException ex) {
             JOptionPane.showMessageDialog(null, "Erro ao registrar.");
